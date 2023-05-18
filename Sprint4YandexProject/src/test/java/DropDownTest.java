@@ -40,7 +40,6 @@ public class DropDownTest extends BaseTestConfig {
         new MainPage(driver)
                 .openSite()
                 .clickCookieButton()
-                .scrollOrder()
                 .clickQuestionButton(question);
 
         new MainPage(driver);

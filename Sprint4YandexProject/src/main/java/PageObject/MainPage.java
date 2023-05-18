@@ -57,16 +57,6 @@ public class MainPage {
         return this;
     }
 
-
-
-    //Прокрутка страницы до последнего элемента
-
-    public MainPage scrollOrder() {
-
-        WebElement lastQuestionArrow = driver.findElement(By.id("accordion__heading-7"));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", lastQuestionArrow);
-        return this;
-    }
     public final MainPage openSite() {
         driver.get("https://qa-scooter.praktikum-services.ru/");
         return this;
