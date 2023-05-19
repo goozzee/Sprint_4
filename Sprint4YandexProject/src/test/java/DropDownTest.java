@@ -42,7 +42,7 @@ public class DropDownTest extends BaseTestConfig {
                 .clickCookieButton()
                 .clickQuestionButton(question);
 
-        new MainPage(driver);
+
         String ActualAnswerText = driver.findElement(By.id(answer)).getText();
         assertEquals("Текст в ответе не соответствует ожидаемому результату", expected, ActualAnswerText);
 

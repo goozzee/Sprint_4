@@ -81,7 +81,7 @@ public class RentPage {
         return this;
     }
     // Комментарий для курьера
-    public RentPage commentСourier(String value) {
+    public RentPage commentCourier(String value) {
         driver.findElement(commentField).sendKeys(value);
         return this;
     }

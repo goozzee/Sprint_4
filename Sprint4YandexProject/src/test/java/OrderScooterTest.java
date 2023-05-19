@@ -4,9 +4,7 @@ import PageObject.RentPage;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.junit.runners.ParentRunner;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 @RunWith(Parameterized.class)
 public class OrderScooterTest extends BaseTestConfig {
@@ -49,7 +47,7 @@ private final By orderButton;
                 .sendRentalDate("16.05.2023")
                 .sendRentalPeriod()
                 .sendScooterColor()
-                .commentСourier("Комментарий")
+                .commentCourier("Комментарий")
                 .clickOrderButton()
                 .clickModalOrderWindow()
                 .checkModalOrderWindowComplete();
